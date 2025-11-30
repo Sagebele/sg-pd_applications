@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LSPD Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <!-- Use the new web script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="images/logo.png" alt="LSPD Logo" class="logo" />
+            <div class="title-wrapper">
+                <h1 id="title">Los Santos Police Department</h1>
+                <p id="subtitle">Application Form</p>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <div id="message" class="message"></div>
+
+        <!-- Step 1 -->
+        <div class="form-step active" id="step1"></div>
+
+        <!-- Step 2 -->
+        <div class="form-step" id="step2">
+            <h2 class="section-title">Police Knowledge</h2>
+            <div id="police-questions"></div>
+
+            <h2 class="section-title">Scenario Assessment</h2>
+            <div id="scenario-questions"></div>
+
+            <div class="nav-buttons">
+                <button id="prevBtn" type="button">Previous</button>
+                <button id="submitBtn" type="button">Submit Application</button>
+            </div>
+        </div>
+
+        <div class="nav-buttons" id="step1-nav">
+            <button id="nextBtn" type="button">Next</button>
+        </div>
+    </div>
+</body>
+</html>
